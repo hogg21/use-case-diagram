@@ -1,0 +1,45 @@
+format 224
+
+classcanvas 128127 class_ref 128127 // admin
+  simpleclassdiagramsettings end
+  xyz 155 384 2000
+end
+usecasecanvas 128255 usecase_ref 128127 // edit data
+  xyzwh 217 154 3005 64 32 label_xy 228 186
+end
+usecasecanvas 128511 usecase_ref 128255 // add content on the site
+  xyzwh 300 243 3005 64 32 label_xy 277 275
+end
+classcanvas 131199 class_ref 128255 // user
+  simpleclassdiagramsettings end
+  xyz 596 184 2000
+end
+usecasecanvas 131327 usecase_ref 128383 // register
+  xyzwh 456 195 3005 64 32 label_xy 469 227
+end
+usecasecanvas 131583 usecase_ref 128511 // seach user in a few fields
+  xyzwh 369 378 3005 64 32 label_xy 338 410
+end
+usecasecanvas 133759 usecase_ref 128639 // add user's categories
+  xyzwh 144 188 3011 64 32 label_xy 124 220
+end
+usecasecanvas 134015 usecase_ref 128767 // loggedIn
+  xyzwh 374 137 3005 64 32 label_xy 386 169
+end
+line 128383 --->
+  from ref 128127 z 3006 to ref 128255
+line 131071 --->
+  from ref 128127 z 3006 to ref 128511
+line 131455 --->
+  from ref 131199 z 3006 to ref 131327
+line 133503 --->
+  from ref 131583 z 3006 to ref 131199
+line 133631 --->
+  from ref 128127 z 3006 to ref 131583
+line 133887 --->
+  from ref 128127 z 3012 to ref 133759
+line 134143 --->
+  from ref 131327 z 3006 to ref 134015
+line 134271 --->
+  from ref 128255 z 3012 to ref 133759
+end
